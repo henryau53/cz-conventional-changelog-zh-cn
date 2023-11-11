@@ -1,6 +1,6 @@
 {
   "name": "cz-conventional-changelog-zh-cn",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A fork of cz-conventional-changelog, and has been sensibly localized into Simplified Chinese.",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,10 @@
     "node": ">= 10"
   },
   "author": "Henry Yau <henryau53@outlook.com>",
+  "keywords": [
+    "commitizen",
+    "conventional-changelog"
+  ],
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
