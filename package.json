@@ -1,7 +1,7 @@
 {
-  "name": "cz-conventional-changelog",
+  "name": "cz-conventional-changelog-zh-cn",
   "version": "0.0.1",
-  "description": "Commitizen adapter following the conventional-changelog format.",
+  "description": "A fork of cz-conventional-changelog, and has been sensibly localized into Simplified Chinese.",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
@@ -9,16 +9,16 @@
     "format": "prettier --write *.js",
     "semantic-release": "semantic-release"
   },
-  "homepage": "https://github.com/commitizen/cz-conventional-changelog",
+  "homepage": "https://github.com/henryau53/cz-conventional-changelog-zh-cn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/commitizen/cz-conventional-changelog.git"
+    "url": "https://github.com/henryau53/cz-conventional-changelog-zh-cn.git"
   },
   "engineStrict": true,
   "engines": {
     "node": ">= 10"
   },
-  "author": "Jim Cummins <jimthedev@gmail.com>",
+  "author": "Henry Yau <henryau53@outlook.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
