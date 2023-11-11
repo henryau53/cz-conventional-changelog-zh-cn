@@ -1,9 +1,9 @@
 # cz-conventional-changelog-zh-cn
 
 <p align="center">
-  <a href="README.md">English</a>
+  <a href="README_en_US.md">English</a>
   <span style="margin: 0px 8px">|</span>
-  <a href="README_zh_CN.md">中文</a>
+  <a href="README.md">中文</a>
 </p>
 
 cz-conventional-changelog 的分支，符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的简体中文提示。
