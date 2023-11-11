@@ -108,6 +108,8 @@ commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
 
 > ❗建议：复制上面 package.json 中的 `config.commitizen.types` 配置到项目中。
 
+更多提交类型的说明请参考 [conventional-changelog 提交类型](./meta/docs/conventional-changelog-types.md)。
+
 ### Commitlint
 
 如果使用 [commitlint](https://github.com/conventional-changelog/commitlint) JavaScript 库，"maxHeaderWidth" 配置属性将默认使用 "header-max-length" 规则的配置值，而不是硬编码的默认值 100。这可以通过在 package.json 中设置 'maxHeaderWidth' 配置或者设置 CZ_MAX_HEADER_WIDTH 环境变量来进行覆盖。
