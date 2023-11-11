@@ -6,7 +6,13 @@
   <a href="README.md">中文</a>
 </p>
 
-cz-conventional-changelog 的分支，符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的简体中文提示。
+cz-conventional-changelog 的分支，符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的**简体中文提示**版本。
+
+## 截图
+
+![提交](./meta/screenshots/s1.png)
+
+![日志](./meta/screenshots/s2.png)
 
 ## 配置
 
@@ -30,20 +36,45 @@ cz-conventional-changelog 的分支，符合 [conventional changelog](https://gi
             "defaultBody": "",
             "defaultIssues": "",
             "types": {
-              ...
               "feat": {
-                "description": "新的特性",
-                "title": "特性"
+                "description": "添加新功能或功能性变化"
               },
-              ...
+              "fix": {
+                "description": "修复 bug"
+              },
+              "docs": {
+                "description": "只修改了文档"
+              },
+              "style": {
+                "description": "修改了代码风格，不影响代码运行的变更"
+              },
+              "refactor": {
+                "description": "重构代码，既不新增功能，也不是修复 bug"
+              },
+              "perf": {
+                "description": "提升性能的代码更改"
+              },
+              "test": {
+                "description": "增加或修改测试用例"
+              },
+              "build": {
+                "description": "对构建过程或辅助工具和库的更改"
+              },
+              "chore": {
+                "description": "对构建过程或辅助工具和库的更改"
+              },
+              "ci": {
+                "description": "用于对持续集成（CI）配置文件和脚本的更改"
+              },
+              "revert": {
+                "description": "撤销之前的提交"
+              }
             }
         }
     }
 // ...
 }
 ```
-
-> 重点关注下 `config.commitizen.types` 的配置，定义 commitizen 的提交类型与描述，如果未配置该项，当 commitizen 提示时，commitizen 使用默认的为英文版本。
 
 ### 环境变量
 
@@ -55,6 +86,27 @@ cz-conventional-changelog 的分支，符合 [conventional changelog](https://gi
 * CZ_BODY = 默认正文
 * CZ_MAX_HEADER_WIDTH = 标题最大长度
 * CZ_MAX_LINE_WIDTH = 行最大长度
+
+### commitizen 相关配置
+
+初始化项目以使用 cz-conventional-changelog-zh-cn 适配器，更多内容请参考 [commitizen](https://github.com/commitizen/cz-cli) 主页。
+
+```bash
+
+# npm
+commitizen init cz-conventional-changelog-zh-cn --save-dev --save-exact
+
+# yarn
+commitizen init cz-conventional-changelog-zh-cn --yarn --dev --exact
+
+# pnpm
+commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
+
+```
+
+> ⚠️注意：package.json 中的 `config.commitizen.types` 的配置，定义 commitizen 的提交类型与描述，如果未配置该项，当 commitizen 提示时，commitizen 使用默认的为英文版本。
+
+> ❗建议：复制上面 package.json 中的 `config.commitizen.types` 配置到项目中。
 
 ### Commitlint
 
