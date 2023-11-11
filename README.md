@@ -6,17 +6,17 @@
   <a href="README_zh_CN.md">中文</a>
 </p>
 
-A fork of cz-conventional-changelog, and has been sensibly localized into Simplified Chinese. Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard.
+cz-conventional-changelog 的分支，符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的简体中文提示。
 
-## Configuration
+## 配置
 
 ### package.json
 
-Like commitizen, you specify the configuration of cz-conventional-changelog-zh-cn through the package.json's `config.commitizen` key.
+与 commitizen 类似，可以通过 package.json 文件中的 `config.commitizen` 键来指定 cz-conventional-changelog-zh-cn 的配置。
 
 ```json5
 {
-// ...  default values
+// ...  默认值
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog-zh-cn",
@@ -32,8 +32,8 @@ Like commitizen, you specify the configuration of cz-conventional-changelog-zh-c
             "types": {
               ...
               "feat": {
-                "description": "A new feature",
-                "title": "Features"
+                "description": "新的特性",
+                "title": "特性"
               },
               ...
             }
@@ -43,17 +43,19 @@ Like commitizen, you specify the configuration of cz-conventional-changelog-zh-c
 }
 ```
 
-### Environment variables
+> 重点关注下 `config.commitizen.types` 的配置，定义 commitizen 的提交类型与描述，如果未配置该项，当 commitizen 提示时，commitizen 使用默认的为英文版本。
 
-The following environment variables can be used to override any default configuration or package.json based configuration.
+### 环境变量
 
-* CZ_TYPE = defaultType
-* CZ_SCOPE = defaultScope
-* CZ_SUBJECT = defaultSubject
-* CZ_BODY = defaultBody
-* CZ_MAX_HEADER_WIDTH = maxHeaderWidth
-* CZ_MAX_LINE_WIDTH = maxLineWidth
+以下环境变量可用于覆盖任何默认配置或基于 package.json 的配置。
+
+* CZ_TYPE = 默认类型
+* CZ_SCOPE = 默认范围
+* CZ_SUBJECT = 默认简要描述
+* CZ_BODY = 默认正文
+* CZ_MAX_HEADER_WIDTH = 标题最大长度
+* CZ_MAX_LINE_WIDTH = 行最大长度
 
 ### Commitlint
 
-If using the [commitlint](https://github.com/conventional-changelog/commitlint) js library, the "maxHeaderWidth" configuration property will default to the configuration of the "header-max-length" rule instead of the hard coded value of 100.  This can be ovewritten by setting the 'maxHeaderWidth' configuration in package.json or the CZ_MAX_HEADER_WIDTH environment variable.
+如果使用 [commitlint](https://github.com/conventional-changelog/commitlint) JavaScript 库，"maxHeaderWidth" 配置属性将默认使用 "header-max-length" 规则的配置值，而不是硬编码的默认值 100。这可以通过在 package.json 中设置 'maxHeaderWidth' 配置或者设置 CZ_MAX_HEADER_WIDTH 环境变量来进行覆盖。
