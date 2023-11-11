@@ -87,7 +87,7 @@ cz-conventional-changelog 的分支，符合 [conventional changelog](https://gi
 * CZ_MAX_HEADER_WIDTH = 标题最大长度
 * CZ_MAX_LINE_WIDTH = 行最大长度
 
-### commitizen 相关配置
+### Commitizen 相关配置
 
 初始化项目以使用 cz-conventional-changelog-zh-cn 适配器，更多内容请参考 [commitizen](https://github.com/commitizen/cz-cli) 主页。
 
