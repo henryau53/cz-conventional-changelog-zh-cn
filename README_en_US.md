@@ -1,12 +1,13 @@
 # cz-conventional-changelog-zh-cn
 
-<p align="center">
-  <a href="README_en_US.md">English</a>
-  <span style="margin: 0px 8px">|</span>
-  <a href="README.md">中文</a>
-</p>
+[![npm version](https://img.shields.io/npm/v/cz-conventional-changelog-zh-cn.svg?style=flat-square)](https://www.npmjs.org/package/cz-conventional-changelog-zh-cn)
+[![npm downloads](https://img.shields.io/npm/dt/cz-conventional-changelog-zh-cn)](http://npm-stat.com/charts.html?package=cz-conventional-changelog-zh-cn&from=2023-11-01)
 
-A fork of cz-conventional-changelog, and has been sensibly localized into Simplified Chinese. Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard.
+English | [简体中文](./README.md)
+
+Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard.
+
+A fork of [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog), and has been sensibly localized into Simplified Chinese.
 
 ## Screenshots
 
@@ -87,7 +88,7 @@ The following environment variables can be used to override any default configur
 * CZ_MAX_HEADER_WIDTH = maxHeaderWidth
 * CZ_MAX_LINE_WIDTH = maxLineWidth
 
-### Commitizen related configuration
+### Commitizen
 
 Initialize your project to use the cz-conventional-changelog-zh-cn adapter, More details [commitizen](https://github.com/commitizen/cz-cli).
 
@@ -104,9 +105,9 @@ commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
 
 ```
 
-> ⚠️Note: The configuration of `config.commitizen.types` in package.json defines the commit types and descriptions for Commitizen. If this item is not configured, Commitizen will use the default English version when prompting for commits.
+> Note: The configuration of `config.commitizen.types` in package.json defines the commit types and descriptions for Commitizen. If this item is not configured, Commitizen will use the default English version when prompting for commits.
 
-> ❗Suggestion: Copy the `config.commitizen.types` configuration from the package.json above to your project.
+> Suggestion: Copy the `config.commitizen.types` configuration from the package.json above to your project.
 
 Please refer to the description of [conventional-changelog types](./meta/docs/conventional-changelog-types.md) for more information.
 

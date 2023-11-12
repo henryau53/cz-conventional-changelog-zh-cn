@@ -1,12 +1,11 @@
 # cz-conventional-changelog-zh-cn
 
-<p align="center">
-  <a href="README_en_US.md">English</a>
-  <span style="margin: 0px 8px">|</span>
-  <a href="README.md">中文</a>
-</p>
+[![npm version](https://img.shields.io/npm/v/cz-conventional-changelog-zh-cn.svg?style=flat-square)](https://www.npmjs.org/package/cz-conventional-changelog-zh-cn)
+[![npm downloads](https://img.shields.io/npm/dt/cz-conventional-changelog-zh-cn)](http://npm-stat.com/charts.html?package=cz-conventional-changelog-zh-cn&from=2023-11-01)
 
-cz-conventional-changelog 的分支，符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的**简体中文提示**版本。
+[English](./README_en_US.md) | 简体中文
+
+符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的简体中文版提示，是 [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) 的分叉版本。
 
 ## 截图
 
@@ -20,9 +19,9 @@ cz-conventional-changelog 的分支，符合 [conventional changelog](https://gi
 
 与 commitizen 类似，可以通过 package.json 文件中的 `config.commitizen` 键来指定 cz-conventional-changelog-zh-cn 的配置。
 
-```json5
+```json
 {
-// ...  默认值
+// ...
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog-zh-cn",
@@ -87,7 +86,7 @@ cz-conventional-changelog 的分支，符合 [conventional changelog](https://gi
 * CZ_MAX_HEADER_WIDTH = 标题最大长度
 * CZ_MAX_LINE_WIDTH = 行最大长度
 
-### Commitizen 相关配置
+### Commitizen
 
 初始化项目以使用 cz-conventional-changelog-zh-cn 适配器，更多内容请参考 [commitizen](https://github.com/commitizen/cz-cli) 主页。
 
@@ -104,9 +103,9 @@ commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
 
 ```
 
-> ⚠️注意：package.json 中的 `config.commitizen.types` 的配置，定义 commitizen 的提交类型与描述，如果未配置该项，当 commitizen 提示时，commitizen 使用默认的为英文版本。
+> 注意：package.json 中的 `config.commitizen.types` 的配置，定义 commitizen 的提交类型与描述，如果未配置该项，当 commitizen 提示时，commitizen 使用默认的为英文版本。
 
-> ❗建议：复制上面 package.json 中的 `config.commitizen.types` 配置到项目中。
+> 建议：复制上面 package.json 中的 `config.commitizen.types` 配置到项目中。
 
 更多提交类型的说明请参考 [conventional-changelog 提交类型](./meta/docs/conventional-changelog-types.md)。
 
