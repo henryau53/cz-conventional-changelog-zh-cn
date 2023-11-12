@@ -5,7 +5,7 @@
 
 [English](./README_en_US.md) | 简体中文
 
-符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的简体中文版提示，是 [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) 的分叉版本。
+符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的 **简体中文版** 提示，[cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) 的分叉（Fork）版本。
 
 ## 截图
 
@@ -19,7 +19,8 @@
 
 与 commitizen 类似，可以通过 package.json 文件中的 `config.commitizen` 键来指定 cz-conventional-changelog-zh-cn 的配置。
 
-```json
+```json5
+
 {
 // ...
     "config": {
@@ -73,6 +74,7 @@
     }
 // ...
 }
+
 ```
 
 ### 环境变量
@@ -111,4 +113,4 @@ commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
 
 ### Commitlint
 
-如果使用 [commitlint](https://github.com/conventional-changelog/commitlint) JavaScript 库，"maxHeaderWidth" 配置属性将默认使用 "header-max-length" 规则的配置值，而不是硬编码的默认值 100。这可以通过在 package.json 中设置 'maxHeaderWidth' 配置或者设置 CZ_MAX_HEADER_WIDTH 环境变量来进行覆盖。
+如果使用 [commitlint](https://github.com/conventional-changelog/commitlint) JavaScript 库，`maxHeaderWidth` 配置属性将默认使用 `header-max-length` 规则的配置值，而不是硬编码的默认值 100。这可以通过在 package.json 中设置 `maxHeaderWidth` 配置或者设置 `CZ_MAX_HEADER_WIDTH` 环境变量来进行覆盖。
