@@ -1,6 +1,6 @@
 {
   "name": "cz-conventional-changelog-zh-cn",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A fork of cz-conventional-changelog, and has been sensibly localized into Simplified Chinese.",
   "main": "index.js",
   "scripts": {
