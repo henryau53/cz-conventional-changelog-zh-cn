@@ -9,6 +9,8 @@ Prompts for [conventional changelog](https://github.com/conventional-changelog/c
 
 A fork of [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog), and has been sensibly localized into Simplified Chinese.
 
+🪧 If you prefer, you can take a look at the author's [cz-conventional-template-zh-cn](https://github.com/henryau53/cz-conventional-template-zh-cn), which is an integrated template that can be applied to multi-repo projects. It may be more suitable for you.
+
 ## Screenshots
 
 ![commits](./meta/screenshots/s1.png)
@@ -77,6 +79,8 @@ Like commitizen, you specify the configuration of cz-conventional-changelog-zh-c
 }
 ```
 
+> Note: The current version by default has integrated Simplified Chinese descriptions for `c`onfig.commitizen.types`. If you don't like the default descriptions, you can customize and modify them through the above configuration.
+
 ### Environment variables
 
 The following environment variables can be used to override any default configuration or package.json based configuration.
@@ -104,10 +108,6 @@ commitizen init cz-conventional-changelog-zh-cn --yarn --dev --exact
 commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
 
 ```
-
-> Note: The configuration of `config.commitizen.types` in package.json defines the commit types and descriptions for Commitizen. If this item is not configured, Commitizen will use the default English version when prompting for commits.
-
-> Suggestion: Copy the `config.commitizen.types` configuration from the package.json above to your project.
 
 Please refer to the description of [conventional-changelog types](./meta/docs/conventional-changelog-types.md) for more information.
 

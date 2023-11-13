@@ -5,7 +5,9 @@
 
 [English](./README_en_US.md) | 简体中文
 
-符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的 **简体中文版** 提示，[cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) 的分叉（Fork）版本。
+符合 [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) 标准的 **简体中文版** 提示适配器，[cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) 的分叉（Fork）版本。
+
+🪧 如果你更喜欢可以应用于多项目（multi-repo）的集成好的模板，可以去作者的 [cz-conventional-template-zh-cn](https://github.com/henryau53/cz-conventional-template-zh-cn) 瞧一瞧，也许更适合你。
 
 ## 截图
 
@@ -17,10 +19,9 @@
 
 ### package.json
 
-与 commitizen 类似，可以通过 package.json 文件中的 `config.commitizen` 键来指定 cz-conventional-changelog-zh-cn 的配置。
+与 commitizen 类似，可以通过 package.json 文件中的 `config.commitizen` 键来指定 cz-conventional-changelog-zh-cn 的相关配置，可配置项如下：
 
 ```json5
-
 {
 // ...
     "config": {
@@ -74,8 +75,9 @@
     }
 // ...
 }
-
 ```
+
+> 注意：默认当前版本已经集成了 `config.commitizen.types` 的中文描述，如果你不喜欢默认的中文描述，可通过上述配置自定义修改。
 
 ### 环境变量
 
@@ -104,10 +106,6 @@ commitizen init cz-conventional-changelog-zh-cn --yarn --dev --exact
 commitizen init cz-conventional-changelog-zh-cn --pnpm --save-dev --save-exact
 
 ```
-
-> 注意：package.json 中的 `config.commitizen.types` 的配置，定义 commitizen 的提交类型与描述，如果未配置该项，当 commitizen 提示时，commitizen 使用默认的为英文版本。
-
-> 建议：复制上面 package.json 中的 `config.commitizen.types` 配置到项目中。
 
 更多提交类型的说明请参考 [conventional-changelog 提交类型](./meta/docs/conventional-changelog-types.md)。
 
